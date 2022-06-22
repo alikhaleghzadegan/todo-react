@@ -9,21 +9,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <header>
-          <div class="header">
-            <div class="profile">
-              <h3>Hello, John!</h3>
-            </div>
-            <h3 id="logout">Log out</h3>
+    <div>
+      <header>
+        <div className="header">
+          <div className="profile">
+            <h3>Hello, John!</h3>
           </div>
-        </header>
-        <main>
-          <h1>John's To Do List!</h1>
-          <Form />
-        </main>
-      </body>
+          <h3 id="logout">Log out</h3>
+        </div>
+      </header>
+      <main>
+        <h1>John's To Do List!</h1>
+        <Form />
+      </main>
     </div>
   );
 }

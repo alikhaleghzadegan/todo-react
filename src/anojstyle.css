@@ -6,16 +6,20 @@
 }
 
 body {
-  background-color: rgb(255, 240, 203);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: -webkit-linear-gradient(#083b4c, #189990);
+  /*background-image: url('pics/venom1.jpeg');*/
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
 body h1 {
   padding: 1rem 0;
   margin: 0 auto;
   font-weight: 300;
+  color: white;
 }
 
 /* HEADER */
@@ -23,7 +27,7 @@ body h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 219, 128);
+  background-color: rgb(44, 66, 85);
   padding: 0.5rem 1rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -65,6 +69,8 @@ main h1 {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  color: rgb(0, 153, 66);
+  /*background-color: aliceblue;*/
 }
 
 input,
@@ -72,18 +78,19 @@ button {
   appearance: none;
   outline: none;
   border: none;
-  background: none;
+  background: aliceblue;
+  border: 1px solid rgb(34, 192, 255);
 }
 
 #new-task-input {
   flex: 1 1 0%;
-  background-color: rgb(213, 213, 163);
+  background-color: aliceblue;
   padding: 1rem;
   border-radius: 1rem;
   margin-right: 1rem;
-  color: white;
   font-weight: 600;
   font-size: 1.25rem;
+  color: rgb(59, 69, 108);
 }
 
 #new-task-input::placeholder {
@@ -91,19 +98,17 @@ button {
 }
 
 #new-task-submit {
-  color: rgb(251, 189, 65);
   background-color: white;
-  border: 1px solid rgb(251, 189, 65);
   border-radius: 1rem;
   font-weight: 700;
   font-size: 1.25rem;
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid rgb(34, 192, 255);
 }
 
 #new-task-submit:hover {
-  background-color: rgb(251, 189, 65);
-  color: white;
+  color: #a96092b9;
 }
 
 #new-task-submit:active {
@@ -231,8 +236,4 @@ i {
   font-weight: 700;
   width: 2rem;
   cursor: pointer;
-}
-#new-task-submit .fa-plus:hover {
-  opacity: 0.6;
-  color: #8f0551;
 }
