@@ -11,13 +11,12 @@ function App() {
       <header>        
         <div className="header">
             <div className="profile">                
-                
                 <h3>Hello, user!</h3>
             </div>
         </div>          
       </header>
       <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
 }

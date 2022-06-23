@@ -206,13 +206,28 @@ i {
 }
 
 /* ONCE TASK MARKED COMPLETED */
-.completed {
+.completed { /*this is how the check button looks like after clicking task as complete. Todo.js changes its class when user clicks on check button*/
   opacity: 0.5;
+  font-size: 1.5rem;
+  color: #00a67e;
+  margin-right: 0.25rem;    
+  transition: 0.25s;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.completed .content {
+.completed-content { /*this is how the text area looks like once user clicks on check. Todo.js changes the class of the text(input element).*/
   text-decoration: line-through;
   color: black;
+  flex-grow: 1;
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-right: 0rem;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: 'Ink Free';
 }
 
 /* DELETE BUTTON */
