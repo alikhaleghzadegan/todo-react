@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './style.css';
-// import './main.js';
 import profilePic from './images/profilePic.jpeg';
 import logomain from './images/logomain.png';
+// import './main.js';
 
 export default () => {
 
   return (
-    <div class="EASY">
+    <div>
     <body>    
     <header>        
         <div class="header">
@@ -32,10 +32,8 @@ export default () => {
             </div>
         </div>
       </section>
-    </main> 
-    <script src="main.js"></script>   
-    </body>
-            
+    </main>     
+    </body>            
 </div> 
   );
 };
