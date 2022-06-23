@@ -3,22 +3,23 @@ import React, { useState } from "react";
 const Form = () => {
   const [inputform, setInputform] = useState("");
   const [list, setList] = useState([]);
+  const [testlist, setTestlist] = useState([]);
   //handle text change
   const handleChange = (e) => {
     setInputform(e.target.value);
   };
-  //object list: key, value
-  const loadId = {
-    id: list.length + 1,
-    todos: inputform,
-  };
-  //key = {loadId.id} ?
+  //object list: key, value access: loadId[i].Id,loadId[i].todos
+  const loadId = [
+    {
+      id: list.length + 1,
+      todos: inputform,
+    },
+  ];
 
   //handle Click Event:update liststate and save it as key pair values
   const handleClick = (e) => {
     e.preventDefault();
     setList([...list, loadId]);
-    console.log(loadId.id + "" + loadId.todos);
   };
   return (
     <form id="new-task-form">
