@@ -8,13 +8,14 @@ function App() {
   const [todos, setTodos] = useState([]);
   //useffect for lcoal storage
   useEffect((todos) => {
+      let todolocal;
     if (localStorage.getItem("todos") === null) {
       localStorage.setItem("todos", JSON.stringify([]));
     } else {
-      let todolocal = JSON.parse(localStorage.getItem("todos"));
+      todolocal = JSON.parse(localStorage.getItem("todos"));
       //set current state to local todo
       setTodos(todolocal);
-      console.log(todolocal);
+      console.log(todolocal); 
     }
   }, []);
 
